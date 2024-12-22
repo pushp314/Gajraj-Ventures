@@ -1,7 +1,8 @@
 import React from 'react';
 import { Lightbulb, Code2, TestTube, Rocket } from 'lucide-react';
 
-export default function Process() {
+export const Process = () => {
+
   const steps = [
     {
       icon: Lightbulb,

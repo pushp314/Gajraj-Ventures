@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code, Layout, Smartphone, Globe, BarChart, Search } from 'lucide-react';
 import { services } from './Services/services.data';
 
 export const Services = () => {
