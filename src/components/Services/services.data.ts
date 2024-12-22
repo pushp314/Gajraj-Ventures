@@ -18,8 +18,8 @@ export const services = [
   },
   {
     icon: Globe,
-    title: 'E-Commerce Solutions',
-    description: 'Complete online store setups with secure payment integration and inventory management.',
+    title: 'Brand &  Strategy',
+    description: 'Strategic branding and marketing solutions to elevate your business and reach new audiences.',
   },
   {
     icon: BarChart,

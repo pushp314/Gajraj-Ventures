@@ -5,11 +5,11 @@ import { Code, Palette, Megaphone, Search, Smartphone, Globe } from "lucide-reac
 
 export const Hero = () => {
   const services = [
+    { icon: Smartphone, title: "App Development", description: "Native and cross-platform apps" },
     { icon: Code, title: "Web Development", description: "Custom websites and web applications" },
+    { icon: Globe, title: "Digital Marketing", description: "Grow your online presence" },
     { icon: Palette, title: "Web Design", description: "Beautiful, responsive designs" },
     { icon: Search, title: "SEO Optimization", description: "Improve your search rankings" },
-    { icon: Smartphone, title: "App Development", description: "Native and cross-platform apps" },
-    { icon: Globe, title: "Digital Marketing", description: "Grow your online presence" },
     { icon: Megaphone, title: "Brand Strategy", description: "Build your brand identity" },
   ];
 
@@ -22,8 +22,8 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
           className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl"
         >
-          <span className="block">Transform Your Digital Presence</span>
-          <span className="block text-indigo-600 dark:text-indigo-400">with Gajraj Ventures</span>
+          <span className="block">We Transform Your Digital Presence</span>
+          <span className="block text-indigo-600 dark:text-indigo-400">Gajraj Ventures</span>
         </motion.h1>
 
         <motion.p
@@ -37,23 +37,28 @@ export const Hero = () => {
 
         {/* Smooth Auto-Scrolling Section */}
         <div className="mt-20 relative overflow-hidden">
-          <motion.div
-            className="flex space-x-6 animate-scroll"
-          >
-            {services.concat(services).map((service, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-80 snap-center"
-              >
-                <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                  <service.icon className="h-12 w-12 text-indigo-600 dark:text-indigo-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{service.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300">{service.description}</p>
-                </div>
-              </div>
-            ))}
-          </motion.div>
+  <motion.div
+    className="flex space-x-6 animate-scroll"
+  >
+    {services.concat(services).map((service, index) => (
+      <div
+        key={index}
+        className="flex-shrink-0 w-[300px] h-[400px] snap-center"
+      >
+        <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center justify-between">
+          <service.icon className="h-12 w-12 text-indigo-600 dark:text-indigo-400 mb-4" />
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center mb-2">
+            {service.title}
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300 text-center">
+            {service.description}
+          </p>
         </div>
+      </div>
+    ))}
+  </motion.div>
+</div>
+
       </div>
     </div>
   );

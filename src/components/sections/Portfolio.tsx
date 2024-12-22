@@ -5,7 +5,7 @@ import { ExternalLink } from 'lucide-react';
 export const Portfolio = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
+      title: 'Brand & Strategy',
       description: 'A full-featured online store with seamless payment integration',
       image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800',
       tags: ['React', 'Node.js', 'Stripe'],
