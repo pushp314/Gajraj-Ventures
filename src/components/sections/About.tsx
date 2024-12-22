@@ -47,7 +47,7 @@ export const About = () => {
             variants={fadeInUp}
             className="mt-4 text-xl text-gray-600 dark:text-gray-300"
           >
-            Transforming ideas into digital excellence
+            Design. Develop. Dominate
           </motion.p>
         </motion.div>
 
